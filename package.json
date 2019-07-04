@@ -13,7 +13,7 @@
     "bot"
   ],
   "scripts": {
-    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline --copy-files"
   },
   "files": [
     "dist/*"
