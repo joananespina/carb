@@ -1,0 +1,11 @@
+{
+  "name": "carb-chatbot",
+  "version": "0.1.0",
+  "description": "Conversation Automation RoBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@joananespina",
+  "license": "MIT"
+}
