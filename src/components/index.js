@@ -11,7 +11,6 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
   const [messageHistory, setMessageHistory] = useState([]);
   const [hasOptions, setHasOptions] = useState(false);
   const [hasBooted, setHasBooted] = useState(false);
-  // const [countX, setCountX] = useState(0);
   const [isBotTyping, setIsBotTyping] = useState(false);
 
   const [userToDo, setUserToDo] = useState(null);
@@ -29,7 +28,6 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
       setMessageHistory([...messageHistory, messageObject]);
       setRobotToDo(userToDo);
       setUserToDo(null);
-      // setCountX(x => x + 1);
     }
   }, [messageHistory, userToDo]);
 
@@ -64,8 +62,6 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
       }
 
       setIsBotTyping(false);
-
-      // setCountX(x => x + 1);
 
       if (ChatbotContent !== null &&
       ChatbotContent.current !== null) {
@@ -151,7 +147,7 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
 
   return <React.Fragment>
     <div className="chatbot-header">
-      <div className="chatbot-header-label">Chatbot <small>v0.1.0</small></div>
+      <div className="chatbot-header-label">Chatbot <small>v0.3.0</small></div>
       <div><button className="chatbot-header-close" onClick={() => {
         closeChatbot();
       }}><CloseIcon /></button></div>
