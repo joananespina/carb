@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import CloseIcon from '@material-ui/icons/Close';
 import Grow from '@material-ui/core/Grow';
 
-import './chatbot.min.css';
+import '../css/chatbot.min.css';
 
 function ChatbotComponent ({ dialogue, closeChatbot }) {
   var ChatbotContent = useRef(null);
@@ -161,7 +161,6 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
         {
           messageHistory.map((obj, index) => {
             if (obj.type === 'message') {
-
               var ChatMessage = <div className={`chat-message chat-message-${obj.src}`}>
                 {obj.say}
               </div>;
@@ -181,6 +180,7 @@ function ChatbotComponent ({ dialogue, closeChatbot }) {
                 </Grow>
               </div>;
             }
+            return false;
           })
         }
       </div>
