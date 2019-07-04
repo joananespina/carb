@@ -1,5 +1,5 @@
 {
-  "name": "carb-chatbot",
+  "name": "carb",
   "version": "0.1.0",
   "description": "Conversation Automation RoBot",
   "main": "index.js",
