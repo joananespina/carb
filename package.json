@@ -1,6 +1,6 @@
 {
   "name": "carb",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Conversation Automation RoBot",
   "main": "dist/index.js",
   "repository": {
@@ -13,7 +13,7 @@
     "bot"
   ],
   "scripts": {
-    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline --copy-files"
   },
   "files": [
     "dist/*"
