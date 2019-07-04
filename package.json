@@ -1,6 +1,6 @@
 {
   "name": "carb",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Conversation Automation RoBot",
   "main": "dist/index.js",
   "repository": {
