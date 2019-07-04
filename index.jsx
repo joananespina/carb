@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import CloseIcon from '@material-ui/icons/Close';
 import Grow from '@material-ui/core/Grow';
 
-import '../src/chatbot.min.css';
+import './src/chatbot.min.css';
 
 function ChatbotComponent ({ dialogue, closeChatbot }) {
   var ChatbotContent = useRef(null);
